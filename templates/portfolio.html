@@ -12,15 +12,6 @@
 <body>
     <header>
         <a href="#" class="logo">Wesly Costa</a>
-
-        <nav>
-            <a href="{% url 'index' %}" > My Works</a>
-            <a href="{% url 'blog' %}" >Blogs</a>
-            <!-- <a href="#" >Skills</a>
-            <a href="#" >Education</a>
-            <a href="#" >Experience</a> -->
-            <a href="{% url 'contact' %}" >Contact</a>
-        </nav>
     </header>
     <section class="home">
         <div class="home-img">
@@ -36,7 +27,15 @@
                 <a href="https://www.facebook.com/wesly.cornelius.costa/"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/wslcrnlscst/?hl=en"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Support Me! Bkash/Nagad: 016 32 95 80 26</a>
+            <a href="{% url 'index' %}" class="btn">My Works</a>
+            <a href="{% url 'blog' %}" class="btn">Blogs</a>
+            <a href="{% url 'contact' %}" class="btn">Contact</a>
+            <!-- <a href="#" class="btn"></a> -->
+             <p><br></p>
+            <a href="#" > ->Support Me! Bkash/Nagad: 016 32 95 80 26 </a>
+            <nav>
+            
+        </nav>
         </div>
     </section>
 </body>

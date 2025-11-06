@@ -17,6 +17,8 @@ def index(request):
         'media_url':settings.MEDIA_URL
     })
 
+def portfolio(request):
+    return render(request, "portfolio.html")
 
 def signup(request):
     if request.method == 'POST':

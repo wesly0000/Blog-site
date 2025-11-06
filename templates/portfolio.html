@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/portfolio.css' %}">
+    <title>Wesly's Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Wesly Costa</a>
+
+        <nav>
+            <a href="{% url 'index' %}" > My Works</a>
+            <a href="{% url 'blog' %}" >Blogs</a>
+            <!-- <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a> -->
+            <a href="{% url 'contact' %}" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img  src="{% static 'assets/images/portfolio.jpeg' %}" alt="Image of Developer">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Wesly</span></h1>
+            <h3 class="typing-text">The <span></span></h3>
+            <p>CS Student, Music Enthusiats. Programmer. And Not a wise man.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/wesly-costa-31161a333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/wesly0000"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/wesly.cornelius.costa/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/wslcrnlscst/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Support Me! Bkash/Nagad: 016 32 95 80 26</a>
+        </div>
+    </section>
+</body>
+</html>
